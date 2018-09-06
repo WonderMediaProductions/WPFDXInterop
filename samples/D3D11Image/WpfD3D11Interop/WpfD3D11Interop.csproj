@@ -51,9 +51,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Wpf.Interop.DirectX">
-      <HintPath>..\packages\Microsoft.Wpf.Interop.DirectX-x64.0.9.0-beta-22856\lib\net45\Microsoft.Wpf.Interop.DirectX.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -115,6 +112,12 @@
     <Resource Include="Images\radiobutton_off.png" />
     <Resource Include="Images\radiobutton_on.png" />
     <Resource Include="Images\Slider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Microsoft.Wpf.Interop.DirectX\Microsoft.Wpf.Interop.DirectX_dxsdk.vcxproj">
+      <Project>{157a478d-fe02-4eb2-bd7c-8cf3bf1cb9a2}</Project>
+      <Name>Microsoft.Wpf.Interop.DirectX_dxsdk</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
